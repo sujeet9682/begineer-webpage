@@ -1,124 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning</title>
-</head>
-<style>
-    p{
-        color: rgb(229 8 8) !important;
-        border: 10px;         /* px is 1/96th of inch */
-        border-color: aqua;
-        border-style: solid; /* border style is required for showing border & properties */
-        border: 2px solid #ff00b5;
-        border-radius:  1px ;
-        border-top-left-radius: 10px;
+  </head>
+  <style>
+    body {
+      background-image: url("https://cdn.wallpapersafari.com/94/31/Ne45dk.jpeg");
+      /* background-repeat: repeat-y;                   /* no-repeat, repeat-x ,repeat-y */
+      /*  background-position: top, ceter-left, center-center, 2px */
+      box-sizing: border-box;
     }
-    #para2{
-        color: rgb(255 108 0) !important;
-    }
-    h1{
-        color: red; 
-    }
-    .data{
-        color:#b13030  !important;
-        background-color: burlywood;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-         /* font stack */
-        /* web safe font */
-
+    * {
+      box-sizing: border-box; /*this makes website responsive */
     }
 
-    span{
-        font-style: italic;
-        font-weight: bold 100px ;
+    p {
+      color: rgb(229 8 8) !important; /* px is 1/96th of inch */
+      border-style: solid; /* border style is required for showing border & properties */
+      border: 2px solid #ff00b5;
+      border-radius: 1px;
+      border-top-left-radius: 10px;
     }
-   
-    body{
-        background-image: url('https://cdn.wallpapersafari.com/94/31/Ne45dk.jpeg');
-       /* background-repeat: repeat-y;                   /* no-repeat, repeat-x ,repeat-y */
-           /*  background-position: top, ceter-left, center-center, 2px */
-           box-sizing: border-box;
-    }
-
-    h1, p{
-        padding:14px;
-        padding : 19px 19px;    /* padding left and riight */
-        margin:9px;
+    h1, p {
+      padding: 14px;
+      padding: 19px 19px; /* padding left and riight */
+      margin: 9px;
     }
 
-    h1{text-align: center;}
-
-    *{
-        box-sizing: border-box;   /*this makes website responsive */
-    }
-    
-    .containeer{
-        width: 597px;
-        border: 5px solid blueviolet;
-        margin: auto;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+    h1 {
+      text-align: center;
     }
 
-    .item{
-        border: 2px solid rgb(90, 86, 86);
-        margin:5px;
-        padding: 12px;
-        background: -o-linear-gradient();
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        text-align: justify;
+    .containeer {
+      max-width: 597px;
+      border: 5px solid blueviolet;
+      margin: auto;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
 
-    #stationary{
-        float: left;
-        width: 48%;
+    .item {
+      border: 2px solid rgb(90, 86, 86);
+      margin: 5px;
+      padding: 12px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      text-align: justify;
     }
 
-    #gift{
-        float: right;
-        width: 48%;
+    #stationary {
+      max-width: 45%;
+      float: left;
     }
 
-    #sports{
-        clear:both;
-        width: 96%;
+    #gift {
+      width: 45%;
+      float: right;
     }
 
-</style>
-<link rel="stylesheet" href="style.css">
-<body>
-    <h1> Learning HTML </h1>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Nihil qui quis error ab iusto adipisci?</p>
-
-    <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Maxime obcaecati maiores incidunt reprehenderit,
-        velit enim minus fuga. Sequi ut earum quasi veritatis ea.</p>
-
-    <p class="data">Lorem ipsum dolor sit amet consectetur <span>font style font weight</span> adipisicing elit.
-            Nihil qui quis error ab iusto adipisci?</p>
+    #sports {
+      width: 97%;
+      clear: both;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <h1>Learning HTML</h1>
 
     <div class="containeer">
-        <div id="stationary" class="item">   <h3>stationary</h3>
-             <p> Maxime obcaecati maiores incidunt reprehenderit,
-            velit enim minus fuga. Sequi ut earum quasi veritatis </p> </div>
-        
-         <div id="gift" class="item">   <h3>gift</h3>
-            <p>Maxime obcaecati maiores incidunt reprehenderit,
-                velit enim minus fuga. maiores incidunt reprehenderit,
-                velium quas Sequi ut earum quasi veritatis ea </p></div>
+      <div id="stationary" class="item">
+        <h3>stationary</h3>
+        <p>
+          Maxime obcaecati maiores incidunt reprehenderit, velit enim minus
+          fuga. Sequi ut earum quasi veritatis
+        </p>
+      </div>
 
-         <div id="sports" class="item">  <h3> sports</h3>
-            <p>Maxime obcaecati maiores incidunt reprehenderit,
-                    velit enim minus fuga. Sequi ut earum quveritatis </p></div>
+      <div id="gift" class="item">
+        <h3>gift</h3>
+        <p>
+          Maxime obcaecati maiores incidunt reprehenderit, velit enim minus
+          fuga. maiores incidunt reprehenderit, velium quas Sequi ut earum quasi
+          veritatis ea
+        </p>
+      </div>
 
+      <div id="sports" class="item">
+        <h3>sports</h3>
+        <p>
+          Maxime obcaecati maiores incidunt reprehenderit, velit enim minus
+          fuga. Sequi ut earum quveritatis
+        </p>
+      </div>
     </div>
-
-
-</body>
+  </body>
 </html>
