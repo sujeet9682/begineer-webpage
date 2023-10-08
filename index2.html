@@ -65,6 +65,29 @@
       width: 97%;
       clear: both;
     }
+
+    .container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: row-reverse wrap; /* this contain both flex-direction & flex-wrap*/
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .box {
+            border: 3px solid blue;
+            width: 340px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        #box1{ 
+                flex-grow: 3; /* this makes the box1  3 times bigger than other box */
+                flex-shrink: 3; /* this makes the box1  3 times shorter than other box */
+                flex-basis: 220px;   /* this keeps this box1 of same width in any responsive case --- when it itself adjustable */
+        }
+
   </style>
   <link rel="stylesheet" href="style.css" />
   <body>
@@ -95,6 +118,15 @@
           fuga. Sequi ut earum quveritatis
         </p>
       </div>
+    </div>
+
+
+    
+    <div class="container">
+        <footer class="box" id="box1"></footer>
+        <footer class="box" id="box2"></footer>
+        <footer class="box" id="box3"></footer>
+        <!-- footer.box#box*4 is used to make 4 boxes-->
     </div>
   </body>
 </html>
